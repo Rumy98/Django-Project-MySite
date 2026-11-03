@@ -7,3 +7,6 @@ def account_view(request):
         request,
         template_name='accounts.html'
     )
+
+def add(a,b):
+    return a+b
