@@ -10,3 +10,6 @@ def account_view(request):
 
 def add(a,b):
     return a+b
+def form_submit_view(request):
+    
+    return HttpResponse('<h1>Form submitted</h1>')

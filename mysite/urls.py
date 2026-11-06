@@ -17,10 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from products.views import product_view
-from accounts.views import account_view
+from accounts.views import account_view,form_submit_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/',view=product_view),
     path('account/',view=account_view),
+    path('submit/',view=form_submit_view)
 ]
