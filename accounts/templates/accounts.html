@@ -9,12 +9,13 @@
     <h1>Welcome to the accounts section</h1>
     <h1>Please fill up the following info-</h1>
 
-    <form action="/submit">
+    <form action="/submit/" method="post">
+        {% csrf_token %}
         <input type="text" name="username">
         <br><br>
         <input type="email" name="email">
         <br><br>
-        <button type="/submit">Submit</button>
+        <button type="submit">Submit</button>
     </form>
 
 
